@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            overflow: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cell {
+            float: left;
+            width: 15px;
+            height: 15px;
+            background-color: #aaa;
+            border-color: #000;
+            border-width: 1px;
+            margin: 0px;
+            padding: 0px;
+            border-style: solid;
+            font-size:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='container'>
+    </div>
+    <button onclick="g_editMode = EDIT_MODE_UNKNOWN">지우기</button>
+    <button onclick="g_editMode = EDIT_MODE_BLOCK">장애물</button>
+    <button onclick="g_editMode = EDIT_MODE_START">시작</button>
+    <button onclick="g_editMode = EDIT_MODE_END">끝</button>
+    <button onclick="demo()">데모</button>
+
+
+    <script src='astar.js'></script>
+    <script src='index.js'></script>
+</body>
+
+</html>
